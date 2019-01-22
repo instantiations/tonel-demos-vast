@@ -45,7 +45,7 @@ Under [source](source/) there are some apps that were written with the whole pur
 
 ### Demo for importing in VA
 
-`TonelExampleApp` has subapps, config expressions, prerequisites, shadow subapps, private methods, multi categorized methods, and all VA specific features. This app is intended to be imported only in VA Smalltalk, yet not loosing any if the information that was originally in the VA applications.
+`TonelExampleApp` has subapps, config expressions, prerequisites, shadow subapps, private methods, multi categorized methods, and all VA specific features. This app is intended to be imported only in VA Smalltalk, yet not loosing any if the information that was originally in the VA applications. This cannot be currently tested until we finish the Tonel importer for VA. 
 
 ### Demo for importing in Pharo
 
