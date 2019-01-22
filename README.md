@@ -23,7 +23,7 @@ For [Instantiations](https://www.instantiations.com/) and VA Smalltalk, having g
 
 ## Tonel for VA in a Nutshell
 
-[Tonel format](https://github.com/pharo-vcs/tonel) is a work in progress for VA 9.2. Our implementation tries to satisfy as much as possible the spec. However, the spec didn't take into account some important VA-specific features. Below is the list of differences and how they were accomplished in VA:
+Supporting the [Tonel format](https://github.com/pharo-vcs/tonel) is a work in progress for VA 9.2. Our implementation tries to satisfy as much as possible the spec. However, the spec didn't take into account some important VA-specific features. Below is the list of differences and how they were accomplished in VA:
 
 - VA supports multiple categories per method (not just one). Solution: add custom `#vaCategories:` key to method definition whose value is an array of categories.
 - VA supports `private` vs `public` methods. Solution: add custom `#vaVisibility` key to method definition whose value is a string.
@@ -41,8 +41,12 @@ For [Instantiations](https://www.instantiations.com/) and VA Smalltalk, having g
 
 ## Demos
 
-Under [source](source/) there are some apps that were written with the whole purpose of demoing. These apps where written in VA Smalltalk, exported with Tonel and then pushed to this git repository.
+Under [source](source/) there are some apps that were written with the whole purpose of demoing. These apps where written in VA Smalltalk, exported with Tonel and then pushed to this git repository. In addition, under the directory [envy](assets/envy/)  you can find the original exported apps as `.dat` files. That way, you can import the original apps in VA and see how they look like.
 
 ### Demo for importing in VA
 
+`TonelExampleApp` has subapps, config expressions, prerequisites, shadow subapps, private methods, multi categorized methods, and all VA specific features. This app is intended to be imported only in VA Smalltalk, yet not loosing any if the information that was originally in the VA applications.
+
 ### Demo for importing in Pharo
+
+`TonelExampleForPharoApp` doesn't have any VA subapps and it is expected to be imported in Pharo using [Iceberg](https://github.com/pharo-vcs/iceberg) without issues. The only condition is that you have to manually create a dummy class `Application` and `SubApplication` loading the code.
