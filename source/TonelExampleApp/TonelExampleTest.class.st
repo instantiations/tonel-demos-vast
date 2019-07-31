@@ -42,8 +42,8 @@ TonelExampleTest class >> classVar1 [
 ]
 
 {
-	#category : 'Private',
-	#vaCategories : ['Private','Real Category','Another One','Accessing'],
+	#category : 'Accessing',
+	#vaCategories : ['Accessing','Another One','Private','Real Category'],
 	#vaVisibility : 'private'
 }
 TonelExampleTest >> privateMethod [

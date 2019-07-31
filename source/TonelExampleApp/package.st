@@ -1,7 +1,5 @@
 Package {
 	#name : 'TonelExampleApp',
 	#vaPrerequisites : ['SUnit','TonelWriterModel'],
-	#vaSubApplications : [
-		[ 'true', [ 'TonelExampleSubApp']]
-	]
+	#vaSubApplications : [	{		#condition : 'true',		#subapps : [			'TonelExampleSubApp'		]	}]
 }
