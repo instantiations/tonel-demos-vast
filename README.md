@@ -13,7 +13,7 @@
   </p>
 </p>
 
-For [Instantiations](https://www.instantiations.com/) and VA Smalltalk, having git support is a priority. The first step is to have a [Tonel format](https://github.com/pharo-vcs/tonel) writer and reader and that is already in the roadmap for VA 9.2.
+For [Instantiations](https://www.instantiations.com/) and VA Smalltalk, having git support is a priority. The first step is the [Tonel support](https://github.com/vasmalltalk/tonel-vast) to read and write Applications in Tonel format.
 
 ## License
 - The code is licensed under [MIT](LICENSE).
