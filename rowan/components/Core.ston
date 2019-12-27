@@ -16,8 +16,47 @@ RwProjectLoadComponentV2 {
 				]
 			}
 		},
-		[ 'vast' ] : {
-      'core': {
+		[
+			'vast'
+		] : {
+			'core' : {
+				#packageNames : [
+					'TonelExampleSubApp',
+					'TonelExampleShadowSubSubSubApp',
+					'TonelExampleShadowSubSubApp',
+					'TonelExampleAnotherSubSubApp',
+					'TonelAnotherShadowSubSubApp',
+					'TonelExampleSubSubApp'
+				]
+			},
+			'tests' : {
+				#packageNames : [
+				]
+			}
+		},
+		[
+			'vast',
+			pharo
+		] : {
+			'core' : {
+				#packageNames : [
+					'TonelExampleApp'
+				]
+			},
+			'tests' : {
+				#packageNames : [
+				]
+			}
+		},
+		[
+			'pharo'
+		] : {
+			'core' : {
+				#packageNames : [
+					'TonelExampleForPharoApp'
+				]
+			},
+			'tests' : {
 				#packageNames : [
 				]
 			}
