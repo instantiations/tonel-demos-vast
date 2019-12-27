@@ -1,0 +1,36 @@
+RwProjectLoadComponentV2 {
+	#name : 'Core',
+	#comment : 'tonel-demo core',
+	#componentNames : [
+		],
+	#conditionalPackages : {
+		[
+			'common'
+		] : {
+			'core' : {
+				#packageNames : [
+				]
+			},
+			'tests' : {
+				#packageNames : [
+				]
+			}
+		},
+		[ 'vast' ] : {
+      'core': {
+				#packageNames : [
+				]
+			}
+		}
+	},
+	#conditionalPackageMapSpecs : {
+		'vast' : {
+		}
+	},
+	#definedGroupNames : {
+		'tests' : [
+			'core'
+		],
+		'core' : [ ]
+	}
+}
