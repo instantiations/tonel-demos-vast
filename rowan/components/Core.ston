@@ -61,7 +61,7 @@ RwProjectLoadComponentV2 {
 				#packageNames : [
 				]
 			}
-		}
+		},
 		[
 			'gemstone'
 		] : {
