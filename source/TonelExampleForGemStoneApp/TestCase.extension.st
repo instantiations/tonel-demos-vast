@@ -3,7 +3,7 @@ Extension {
 }
 
 {
-	#category : 'TonelExampleForGemStoneApp',
+	#category : 'TonelExampleForGemStoneApp'
 }
 TestCase >> tonelExampleForGemStoneExtendedMethod [
 
