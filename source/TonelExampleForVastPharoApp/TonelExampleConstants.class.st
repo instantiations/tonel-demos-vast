@@ -6,5 +6,5 @@ Class {
 		'Constant1'
 	],
 	#type : 'variable',
-	#category : 'TonelExampleApp'
+	#category : 'TonelExampleForVastPharoApp'
 }

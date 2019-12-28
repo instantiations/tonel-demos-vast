@@ -9,6 +9,7 @@ RwProjectLoadComponentV2 {
 		] : {
 			'core' : {
 				#packageNames : [
+					'TonelExampleApp'
 				]
 			},
 			'tests' : {
@@ -40,7 +41,7 @@ RwProjectLoadComponentV2 {
 		] : {
 			'core' : {
 				#packageNames : [
-					'TonelExampleApp'
+					'TonelExampleForVastPharoApp'
 				]
 			},
 			'tests' : {
@@ -54,6 +55,19 @@ RwProjectLoadComponentV2 {
 			'core' : {
 				#packageNames : [
 					'TonelExampleForPharoApp'
+				]
+			},
+			'tests' : {
+				#packageNames : [
+				]
+			}
+		}
+		[
+			'gemstone'
+		] : {
+			'core' : {
+				#packageNames : [
+					'TonelExampleForGemStoneApp'
 				]
 			},
 			'tests' : {
