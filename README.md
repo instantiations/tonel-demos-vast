@@ -2,7 +2,7 @@
 <!-- <img src="assets/logos/128x128.png"> -->
  <h1 align="center">Tonel and VA Smalltalk Demos</h1>
   <p align="center">
-    Repository used for sharing some demos about Tonel integration with VASmalltalk.
+    Repository used for sharing some demos about Tonel integration with VAST Platform (VA Smalltalk).
     <br>
     <a href="docs/"><strong>Explore the docs »</strong></a>
     <br>
