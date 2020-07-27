@@ -1,0 +1,105 @@
+RwProjectLoadComponentV2 {
+	#name : 'Core',
+	#comment : 'tonel-demo core',
+	#conditionalPackages : {
+		[
+			'common'
+		] : {
+			'core' : {
+				#componentNames : [
+				],
+				#packageNames : [
+					'TonelExampleApp'
+				]
+			},
+			'tests' : {
+				#packageNames : [
+				]
+			}
+		},
+		[
+			'vast'
+		] : {
+			'core' : {
+				#componentNames : [
+				],
+				#packageNames : [
+					'TonelExampleSubApp',
+					'TonelExampleShadowSubSubSubApp',
+					'TonelExampleShadowSubSubApp',
+					'TonelExampleAnotherSubSubApp',
+					'TonelAnotherShadowSubSubApp',
+					'TonelExampleSubSubApp'
+				]
+			},
+			'tests' : {
+				#componentNames : [
+				],
+				#packageNames : [
+				]
+			}
+		},
+		[
+			'vast',
+			'pharo'
+		] : {
+			'core' : {
+				#componentNames : [
+				],
+				#packageNames : [
+					'TonelExampleForVastPharoApp'
+				]
+			},
+			'tests' : {
+				#componentNames : [
+				],
+				#packageNames : [
+				]
+			}
+		},
+		[
+			'pharo'
+		] : {
+			'core' : {
+				#componentNames : [
+				],
+				#packageNames : [
+					'TonelExampleForPharoApp'
+				]
+			},
+			'tests' : {
+				#componentNames : [
+				],
+				#packageNames : [
+				]
+			}
+		},
+		[
+			'gemstone'
+		] : {
+			'core' : {
+				#componentNames : [
+				],
+				#packageNames : [
+					'TonelExampleForGemStoneApp'
+				]
+			},
+			'tests' : {
+				#componentNames : [
+				],
+				#packageNames : [
+				]
+			}
+		}
+	},
+	#conditionalPackageMapSpecs : {
+		'vast' : {
+		}
+	},
+	#definedGroupNames : {
+		'tests' : [
+			'core'
+		],
+		'core' : [ ]
+	}
+}

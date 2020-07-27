@@ -1,0 +1,18 @@
+RwLoadSpecificationV2 {
+	#specName : 'tonel-demo',
+	#gitUrl : 'https://github.com/dalehenrich/tonel-demos',
+	#comment : 'tonel-demo Rowan load specification',
+	#revision : 'rowan_553',
+	#projectSpecFile : 'rowan/project.ston',
+	#componentNames : [
+		'RowanV2'
+	],
+	#groupNames : [
+		'core',
+		'tests'
+	],
+	#platformProperties : {
+		'vast' : {
+		}
+	}
+}

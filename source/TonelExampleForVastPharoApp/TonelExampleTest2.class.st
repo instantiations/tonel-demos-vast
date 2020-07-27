@@ -1,8 +1,8 @@
 "
-TonelExampleTest is an application used to verify that the tonel writer and reader for VA does work
+TonelExampleTest2 is an application used to verify that the tonel writer and reader for VA does work
 "
 Class {
-	#name : 'TonelExampleTest',
+	#name : 'TonelExampleTest2',
 	#superclass : 'TestCase',
 	#instVars : [
 		'instVar1',
@@ -13,6 +13,9 @@ Class {
 		'ClassVar1',
 		'ClassVar2',
 		'ClassVar3'
+	],
+	#pools : [
+		'TonelExampleConstants'
 	],
 	#classInstVars : [
 		'classInstVar1',
@@ -25,7 +28,7 @@ Class {
 {
 	#category : 'Accessing'
 }
-TonelExampleTest class >> classInstVar1 [
+TonelExampleTest2 class >> classInstVar1 [
 
 	^ classInstVar1 ifNil: [ classInstVar1 := 'classInstVar1' ]
 ]
@@ -33,7 +36,7 @@ TonelExampleTest class >> classInstVar1 [
 {
 	#category : 'Accessing'
 }
-TonelExampleTest class >> classVar1 [
+TonelExampleTest2 class >> classVar1 [
 
 	^ ClassVar1 ifNil: [ ClassVar1 := 'ClassVar1' ]
 ]
@@ -43,7 +46,7 @@ TonelExampleTest class >> classVar1 [
 	#vaCategories : ['Accessing','Another One','Private','Real Category'],
 	#vaVisibility : 'private'
 }
-TonelExampleTest >> privateMethod [
+TonelExampleTest2 >> privateMethod [
 
 	^'privateMethod'
 ]
@@ -51,14 +54,14 @@ TonelExampleTest >> privateMethod [
 {
 	#category : 'Running'
 }
-TonelExampleTest >> setUp [
+TonelExampleTest2 >> setUp [
 	instVar1 := 'instVar1'
 ]
 
 {
 	#category : 'Testing'
 }
-TonelExampleTest >> testClassDefinedInSubApp [
+TonelExampleTest2 >> testClassDefinedInSubApp [
 
 	self assert: TonelExampleSubAppClass notCategorizedMethod equals: 'notCategorizedMethod'
 ]
@@ -66,7 +69,7 @@ TonelExampleTest >> testClassDefinedInSubApp [
 {
 	#category : 'Testing'
 }
-TonelExampleTest >> testClassDefinedInSubSubApp [
+TonelExampleTest2 >> testClassDefinedInSubSubApp [
 
 	self assert: TonelExampleSubSubAppClass notCategorizedMethod2 equals: 'notCategorizedMethod2'
 ]
@@ -74,7 +77,7 @@ TonelExampleTest >> testClassDefinedInSubSubApp [
 {
 	#category : 'Testing'
 }
-TonelExampleTest >> testClassInstVarAccess [
+TonelExampleTest2 >> testClassInstVarAccess [
 
 	self assert: self class classInstVar1 equals: 'classInstVar1'
 ]
@@ -82,7 +85,7 @@ TonelExampleTest >> testClassInstVarAccess [
 {
 	#category : 'Testing'
 }
-TonelExampleTest >> testClassVarAccess [
+TonelExampleTest2 >> testClassVarAccess [
 
 	self assert: self class classVar1 equals: 'ClassVar1'
 ]
@@ -90,7 +93,7 @@ TonelExampleTest >> testClassVarAccess [
 {
 	#category : 'Testing'
 }
-TonelExampleTest >> testExtendedMethodFromRootApp [
+TonelExampleTest2 >> testExtendedMethodFromRootApp [
 
 	self assert: self tonelExampleExtendedMethodFromRootApp equals: 'tonelExampleExtendedMethodFromRootApp'
 ]
@@ -98,7 +101,7 @@ TonelExampleTest >> testExtendedMethodFromRootApp [
 {
 	#category : 'Testing'
 }
-TonelExampleTest >> testExtendedMethodFromSubApp [
+TonelExampleTest2 >> testExtendedMethodFromSubApp [
 
 	self assert: self tonelExampleExtendedMethodFromSubApp equals: 'tonelExampleExtendedMethodFromSubApp'
 ]
@@ -106,7 +109,7 @@ TonelExampleTest >> testExtendedMethodFromSubApp [
 {
 	#category : 'Testing'
 }
-TonelExampleTest >> testExtendedMethodFromSubSubApp [
+TonelExampleTest2 >> testExtendedMethodFromSubSubApp [
 
 	self assert: self tonelExampleExtendedMethodFromSubSubApp equals: 'tonelExampleExtendedMethodFromSubSubApp'
 ]
@@ -114,7 +117,7 @@ TonelExampleTest >> testExtendedMethodFromSubSubApp [
 {
 	#category : 'Testing'
 }
-TonelExampleTest >> testInstVarAccess [
+TonelExampleTest2 >> testInstVarAccess [
 	
 	self assert: instVar1 equals: 'instVar1'
 ]
@@ -122,7 +125,15 @@ TonelExampleTest >> testInstVarAccess [
 {
 	#category : 'Testing'
 }
-TonelExampleTest >> testPrivateMethod [
+TonelExampleTest2 >> testMethodWithPoolDictionaryUsage [
+
+	^ Constant1
+]
+
+{
+	#category : 'Testing'
+}
+TonelExampleTest2 >> testPrivateMethod [
 
 	self assert: self privateMethod equals: 'privateMethod'
 ]
